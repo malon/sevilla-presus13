@@ -37,19 +37,28 @@
 <div class="row skeleton">
     <div id="question" class="span12">
       <h1>Pregunta</h1>
+       <a href="/app/sevilla-presus13/tutorial" class="btn btn-primary pull-right" target="_blank">Abrir el tutorial</a>
       <span class="label label-info"><i class="icon icon-bullhorn"></i> Importante</span> <strong>Solo necesitamos las líneas en las que figuran cuantías por concepto.</strong><br/>
 	  <span class="label label-info"><i class="icon icon-bullhorn"></i> Importante</span> <strong>Ignora tanto los totales como el resto de filas en tu transcripción.</strong><br/>
+      <table border=0>
+      <tr>
+      <td>
       <i>Ejemplo de transcripción de fila (separar campos por punto y coma ( carácter ; )</i>
       <ul>
         <li>Esta fila: 00100 01101 31000 INTERESES OPERACIONES DE TESORERIA 1.841.666,66</li>
         <li>Se transcribiría como: 00100; 01101; 31000; INTERESES OPERACIONES DE TESORERIA; 1.841.666,66
       </ul>
+      </td>
+      <td>
       <i>Ejemplo de filas a ignorar:</i>
       <ul>
         <li>001 DEUDA PÚBLICA</li>
         <li>Total programa 01101 DEUDA PÚBLICA 87.816.681,06</li>
         <li>Página 1 de 68</li>
       </ul>
+      </td>
+      </tr>
+      </table>
       <hr>
     </div>
 </div>
@@ -76,7 +85,7 @@
       <div>
         <h5>
           Escribe aquí la transcripción. Una línea por cada fila del PDF. <strong>Separa los campos con punto y coma</strong> ( el caracter ; )</br>
-        <i>Descarga PDF original de <a href="http://www.sevilla.org/ayuntamiento/presupuestos-municipales/presupuesto-municipal/ano-2013/Estado%20de%20Gastos.%20Clasificacion%20Organica%20y%20Economica.pdf">Gastos</a> o <a href="http://www.sevilla.org/ayuntamiento/presupuestos-municipales/presupuesto-municipal/ano-2013/ESTADO%20DE%20INGRESOS.pdf">Ingresos</a> si quieres copiar/pegar</i>
+        <i>Descarga PDF original de <a href="http://www.sevilla.org/ayuntamiento/presupuestos-municipales/presupuesto-municipal/ano-2013/Estado%20de%20Gastos.%20Clasificacion%20Organica%20y%20Economica.pdf">Gastos</a> o <a href="http://www.sevilla.org/ayuntamiento/presupuestos-municipales/presupuesto-municipal/ano-2013/ESTADO%20DE%20INGRESOS.pdf">Ingresos</a> si quieres copiar/pegar</i><br/>
         </h5>
           <form class="form-inline">
               <textarea id="text" rows="15" style="width:100%;"></textarea>
