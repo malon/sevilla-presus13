@@ -243,13 +243,18 @@ pybossa.presentTask(function(task, deferred){
                 zoom(task, parseInt($(evt.target).attr("value")));
             });
             $(".btn-submit").off('click').on('click', function(){
-                var answer = $("textarea#text").val();
-                $("#viewport_" + task.id).hide();
-                pybossa.saveTask(task.id, answer).done(function(data){
-                    deferred.resolve();
-                    $("#success").fadeIn();
-                    setTimeout(function() { $("#success").fadeOut() }, 2000);
-                })
+                if ($("textarea#text").val() == '') {
+                    alert("El cuadro está vacío, por favor realiza la transcripción antes de enviar");
+                }
+                else {
+                    var answer = $("textarea#text").val();
+                    $("#viewport_" + task.id).hide();
+                    pybossa.saveTask(task.id, answer).done(function(data){
+                        deferred.resolve();
+                        $("#success").fadeIn();
+                        setTimeout(function() { $("#success").fadeOut() }, 2000);
+                    })
+                }
             });
     }
     else {
