@@ -1,60 +1,12 @@
-<div class="row-fluid">
-    <div class="span12">
-        <p>
-        PDF Transcribe is a <strong>demo application</strong> for PyBossa that shows how you can 
-        crowdsourcing a PDF transcription problem.
-        </p>
-        <p>
-        This application uses the <a target="_blank" href="http://mozilla.github.com/pdf.js">Mozilla PDF.JS</a> library to load
-        an <a href="https://github.com/mozilla/pdf.js/wiki/Frequently-Asked-Questions#wiki-faq-xhr">external PDF file</a> and render it directly in the web browser <strong>without using any third party plugin</strong>.
-        </p>
-        <p>
-        By using PDF.JS, we have the possibility of rendering almost any PDF that is hosted under an <a href="https://github.com/mozilla/pdf.js/wiki/Frequently-Asked-Questions#wiki-faq-xhr">HTTP server</a> and then use a customized form to get the data that we want to extract from it .
-        </p>
-    </div>
-</div>
-<div class="row-fluid">
-    <div class="span12">
-        <p>
-        In this <strong>simple demo application</strong>, we <strong>load a PDF file</strong> in one side of the page, and in the other one <strong>a form</strong> where the volunteer will be able to transcribe the PDF page by typing the text in the input form. While this example is really simple, adapting the template to extract specific bits of information from the PDF will be really easy (you will only need to add more HTML input fields with instructions about what you want to extract from the PDF file). The idea is that you could be able for example to extract specific items from the documents, like captions, tabular data, authorship, institutions, etc.
-        </p>
-        <p>
-        <img class="img-polaroid span12" src="http://img10.imageshack.us/img10/5364/pdftranscribe1.png">
-        </p>
-        <p>
-        <p>The provided script for creating the tasks is very simple: you only need to tell the script where is the PDF file hosted, the URL, and which pages you want to convert as tasks. By default, this demo explores the 14 pages of the example PDF file.</p>
-        </p>
-        <p><span class="label label-info">Info</span> You can download the PDF file used in this demo <a href="http://cdn.mozilla.net/pdfjs/tracemonkey.pdf">here</a>. </p>
-    </div>
-</div>
-<div class="row-fluid">
-    <div class="span12">
-        <p>
-        Based on the answer of the users, we will be able to transcribe the pages, 
-        distributing the tasks (thanks to PyBossa) to different users and volunteers.
-        </p>
-        <p>
-        <span class="label label-warning">
-            <i class="icon icon-white icon-bullhorn"></i>
-             Note</span> If you want to learn more about how to use this application as a template,
-         check the:
-         <ul>
-             <li><a href="http://github.com/PyBossa/pdftranscribe">source code</a></li>
-             <li><a href="https://docs.google.com/spreadsheet/ccc?key=0AsNlt0WgPAHwdEVVamc0R0hrcjlGdXRaUXlqRXlJMEE&usp=sharing">Google Docs Spreadsheet Task template for the application</a></li>
-             <li><a href="http://docs.pybossa.com/">the official documentation of PyBossa</a> and </li>
-             <li><a href="http://docs.pybossa.com/en/latest/user/tutorial.html">the step by step tutorial.</a></li>
-         </ul>
-        </p>
-        <p>
-            Logo image courtesy of <a href="http://www.flickr.com/photos/mrmorodo/8174824430/">TempusVolat</a>
-        </p>
-        <hr>
-        <iframe src="http://ghbtns.com/github-btn.html?user=PyBossa&repo=pdftranscribe&type=watch&count=true&size=large" allowtransparency="true" frameborder="0" scrolling="0" width="170" height="30"></iframe>
+<h3><i>Desde <a href="http://sevillaactualidad.com">Sevilla Actualidad</a> y <a href="http://openkratio.org">OpenKratio</a> queremos hacer hacer <b>más transparente</b> nuestra ciudad con tu ayuda. ¿Colaboras?</i></h3>
 
-        <iframe src="http://ghbtns.com/github-btn.html?user=PyBossa&repo=pdftranscribe&type=fork&count=true&size=large" allowtransparency="true" frameborder="0" scrolling="0" width="170" height="30"></iframe>
+El ayuntamiento de Sevilla hizo público a principios de 
+año los <a href="http://www.sevilla.org/ayuntamiento/presupuestos-municipales/presupuestos-municipales-ayuntamiento-de-sevilla">presupuestos de ingresos y gastos para 2013</a>. En <a href="http://openkratio.org">Openkratio</a> comenzamos en el año 2012 un proyecto para hacer más comprensiva y accesible este tipo de información al ciudadano: el proyecto <a href="http://openspending.org/seville-budget">Seville Spending</a>, con <b>visualizaciones como esta</b>:<br/><br/>
 
-    </div>
-</div>
-<script type="text/javascript">
-    $("[rel=tooltip]").tooltip();
-</script>
+<iframe width='700' height='250' src='http://openspending.org/seville-budget/embed?widget=treemap&state=%7B%22drilldown%22%3A%22area%22%2C%22year%22%3A%222012%22%2C%22cuts%22%3A%7B%7D%2C%22drilldowns%22%3A%5B%22area%22%5D%7D&width=700&height=250' frameborder='0'></iframe>
+
+El primer paso será <b>transcribir los datos desde los PDF publicados por el ayuntamiento a una hoja de cálculo</b> y para ello pedimos vuestra colaboración a través de esta plataforma. Finalizada la campaña de transcripción desde <a href="http://openkratio.org">OpenKratio</a> prepararemos un set de visualizaciones para todos vosotros, y desde <a href="http://sevillaactualidad.com">Sevilla Actualidad</a> se dará cobertura informativa.<br/><br/> 
+
+Puedes participar <b>como anónimo o registrar una cuenta</b> en <i>Crowdcrafting</i>, la plataforma que emplearemos para transcribir las páginas del PDF entre todos. Se hará <b>mención especial en los créditos</b> de <a href="http://openspending.org/seville-budget">Seville Spending</a> a los usuarios registrados.<br/><br/> 
+
+<a href="/app/sevilla-presus13/newtask" class="btn btn-primary"><i class="icon-thumbs-up" style="color:white;"></i>Participa!</a> y <b>¡súmate a la <i>ciudadanía 2.0</i>!</b>
