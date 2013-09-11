@@ -1,7 +1,7 @@
 {
-    "name": "PDF Transcription",
-    "short_name": "pdftranscribe",
-    "thumbnail": "http://i.imgur.com/jUvQBm3.png",
-    "description": "Help us to transcribe a PDF file",
-    "question": "Transcribe the following page"
+    "name": "Presupuestos Sevilla 2013",
+    "short_name": "sevilla-presus13",
+    "thumbnail": "http://i6.photobucket.com/albums/y235/joseluismd/nodo.gif",
+    "description": "Aplicación para la transcripción de los presupuestos de ingresos y gastos publicados por el ayuntamiento de Sevilla.",
+    "question": "Transcribe la siguiente página"
 }
