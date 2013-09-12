@@ -37,9 +37,10 @@
 <div class="row skeleton">
     <div id="question" class="span12">
       <h1>Pregunta</h1>
-       <a href="/app/sevilla-presus13/tutorial" class="btn btn-primary pull-right" target="_blank">Abrir el tutorial</a>
       <span class="label label-info"><i class="icon icon-bullhorn"></i> Importante</span> <strong>Solo necesitamos las líneas en las que figuran cuantías por concepto.</strong><br/>
+
 	  <span class="label label-info"><i class="icon icon-bullhorn"></i> Importante</span> <strong>Ignora tanto los totales como el resto de filas en tu transcripción.</strong><br/>
+
       <table border=0>
       <tr>
       <td>
@@ -83,8 +84,11 @@
       </div>
       <div>
         <h5>
-          Escribe aquí la transcripción. Una línea por cada fila del PDF. <strong>Separa los campos con punto y coma</strong> ( el caracter ; )</br>
-        <i>Descarga PDF original de <a href="http://www.sevilla.org/ayuntamiento/presupuestos-municipales/presupuesto-municipal/ano-2013/Estado%20de%20Gastos.%20Clasificacion%20Organica%20y%20Economica.pdf">Gastos</a> o <a href="http://www.sevilla.org/ayuntamiento/presupuestos-municipales/presupuesto-municipal/ano-2013/ESTADO%20DE%20INGRESOS.pdf">Ingresos</a> si quieres copiar/pegar</i><br/>
+          <strong>Transcribe aquí. Una línea por cada fila del PDF. Separa los campos con punto y coma</strong>. 
+          Si no te queda claro, repasa el tutorial. Puedes descargar el PDF para copiar y pegar.<br/>
+       <a href="/app/sevilla-presus13/tutorial" class="btn btn-primary" target="_blank">Abrir tutorial</a>
+       <a href="#" class="btn btn-primary pdf-downloader">Descargar en PDF</a>
+
         </h5>
           <form class="form-inline">
               <textarea id="text" rows="15" style="width:100%;"></textarea>
@@ -187,6 +191,13 @@ function loadUserProgress() {
         $("#progress").tooltip({'placement': 'left'}); 
         $("#total").text(data.total);
         $("#done").text(data.done);
+
+        $('.pdf-downloader').click(function(e) {
+            var pdf_task_page = data.done + 1;
+            var download_url = "https://github.com/openkratio/sevilla-presus13/raw/master/pdf/"+pdf_task_page+"_sevilla-presus13.pdf";
+            window.open(download_url);
+        });
+
     });
 }
 
