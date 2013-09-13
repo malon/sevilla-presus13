@@ -4,28 +4,41 @@
             <div class="modal-header">
                 <h3>Tutorial de Sevilla Presus 2013</h3>
             </div>
+
             <div id="0" class="modal-body" style="display:none">
                 <p>Por favor, <strong>dedica un segundo a este tutorial</strong> donde te explicaremos cómo participar paso a paso. ¡Qué bueno que quieras participar con nosotros! :)</p>
                 <p>Ahora tan solo pulsa en el botón de </i>"Siguiente"</i></p>
             </div>
+
             <div id="1" class="modal-body" style="display:none">
-                <p>La aplicación es realmente sencilla: tras un segundo se carga una página del PDF de presupuestos de Sevilla 2013, tu debes <strong>transcribir a mano al cuadro de texto</strong> y pulsar "Enviar"</p>
-                <p>Necesitamos <strong>una línea por cada fila</strong> del PDF que transcribas, y que <strong>separes los campos con punto y coma</strong> ( el caracter ; )</p><br/>
-                <img src="https://raw.github.com/openkratio/sevilla-presus13/master/tutoimgs/sevilla-presus13-01.png-50.png">
+                <p>La aplicación es realmente sencilla: tras un segundo se carga una página del PDF de presupuestos de Sevilla 2013, tu debes <strong>transcribir a mano usando la tabla de la derecha</strong> y pulsar "Enviar".</p> 
+                <p>Necesitamos <strong>una fila por cada línea</strong> del PDF que transcribas. Ten cuidadito con los <strong>signos de puntuación</strong> en las cantidades numéricas (<i>los puntos y las comas</i>). Por cada fila que escribas aparecerá otra para que puedas seguir rellenando.</p><br/>
+                <img src="https://raw.github.com/openkratio/sevilla-presus13/handsontable/tutoimgs/sevilla-presus13-01.png-50.png">
             </div>
+
             <div id="2" class="modal-body" style="display:none">
-                <p><strong>Importante: </strong> Solo necesitamos las líneas en las que figuran cuantías por concepto.</p><br/>
-                <img src="https://raw.github.com/openkratio/sevilla-presus13/master/tutoimgs/sevilla-presus13-02.png-50.png">
+                <span class="label label-info"><i class="icon icon-bullhorn"></i>Importante:</span></strong> Solo necesitamos las líneas en las que figuran cuantías por concepto.</p>
+                <span class="label label-info"><i class="icon icon-bullhorn"></i>Importante:</span></strong> Ignora tanto los totales como el resto de filas en tu transcripción.</p>
+                <img src="https://raw.github.com/openkratio/sevilla-presus13/handsontable/tutoimgs/sevilla-presus13-02.png-50.png">
             </div>
+
             <div id="3" class="modal-body" style="display:none">
-                <p><strong>Importante:</strong>Ignora tanto los totales como el resto de filas en tu transcripción.</p><br/>
-                <img src="https://raw.github.com/openkratio/sevilla-presus13/master/tutoimgs/sevilla-presus13-03.png-50.png">
+                <p>Disponemos de algunos botones para facilitate la tarea: puedes <strong>hacer zoom</strong> en la página del documento, o directamente <strong>descargar la página en PDF</strong> para verlo mejor o para copiar/pegar ...</p>Hemos situado un botón para que siempre puedas <strong>volver a repetir este tutorial.</strong></p><br/>
+                <img src="https://raw.github.com/openkratio/sevilla-presus13/handsontable/tutoimgs/sevilla-presus13-03.png-50.png">
             </div>
-            <div id="4" class="modal-body" style="display:none">
-                <p>Para evitarte transcribir a mano puedes <strong>descargar la página en PDF</strong> para así poder copiar/pegar ... ¡pero asegúrate que está bien transcrito y que añades los punto y coma!.</p>
-                <p>Nuestra experiencia nos dice que si sigues este método, es <strong>mejor que copies y pegues línea a línea.</strong></p><br/>
-                <img src="https://raw.github.com/openkratio/sevilla-presus13/master/tutoimgs/sevilla-presus13-04.png-50.png">
+
+            <div id="4" class="modal-body" style="display:none">                
+                <p><i>¡Oye!</i>, ¿te has registrado una <strong>cuenta de usuario</strong>? ... Si quieres puedes participar de forma anónima pero no te podremos meter en los créditos :(</p>
+                <p><i>Tranqui</i>, el uso que haremos de tus datos será solo a efectos de poder <strong>reconocer tu colaboración</strong>.</p><br/>
+                <img src="https://raw.github.com/openkratio/sevilla-presus13/handsontable/tutoimgs/sevilla-presus13-04.png-50.png">
             </div>
+
+            <div id="5" class="modal-body" style="display:none">                
+                <p><strong><i>¡Fin del tutorial!</i></strong></p>
+                <p>Si tienes algún problema o necesitas ayuda déjanos un tweet a <a href="http://twitter.com/openkratio" target="_bank">@openkratio</a> con el hashtag #SevillaPresus o mándanos un correito a <a href="mailto:openkratio@gmail.com" target="_blank">openkratio@gmail.com</a></p>
+                <p><strong><i>¡Estamos para ayudarte!</i></strong></p>
+            </div>
+
             <div class="modal-footer">
                 <a id="prevBtn" href="#" onclick="showStep('prev')" class="btn">Anterior</a>
                 <a id="nextBtn" href="#" onclick="showStep('next')" class="btn btn-success">Siguiente</a>
@@ -51,7 +64,7 @@
             $("#prevBtn").show();
         }
 
-        if (step == 4 ) {
+        if (step == 5 ) {
             $("#nextBtn").hide();
             $("#startContrib").show();
         }
