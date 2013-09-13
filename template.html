@@ -38,18 +38,12 @@
 <div class="row skeleton">
     <div id="question" class="span12">
       <h1>Pregunta</h1>
+      <table>
+      <tr>
+      <td>
       <span class="label label-info"><i class="icon icon-bullhorn"></i> Importante</span> <strong>Solo necesitamos las líneas en las que figuran cuantías por concepto.</strong><br/>
 
 	  <span class="label label-info"><i class="icon icon-bullhorn"></i> Importante</span> <strong>Ignora tanto los totales como el resto de filas en tu transcripción.</strong><br/>
-
-      <table border=0>
-      <tr>
-      <td>
-      <i>Ejemplo de transcripción de fila (separar campos por punto y coma ( carácter ; )</i>
-      <ul>
-        <li>Original: 00100 01101 31000 INTERESES OPERACIONES DE TESORERIA 1.841.666,66</li>
-        <li>Transcrita: 00100;01101;31000;INTERESES OPERACIONES DE TESORERIA;1.841.666,66
-      </ul>
       </td>
       <td>
       <i>Ejemplo de filas a ignorar:</i>
@@ -85,7 +79,7 @@
       </div>
       <div>
         <h5>
-          <strong>Transcribe aquí. Una línea por cada fila del PDF. Separa los campos con punto y coma</strong>. 
+          <strong>Transcribe una línea por cada fila del PDF. Conforme rellenes una fila aparecerá otra.</strong> 
           Si no te queda claro, repasa el tutorial. Puedes descargar el PDF para copiar y pegar.<br/><br/>
           <a href="/app/sevilla-presus13/tutorial" class="btn btn-primary" target="_blank">Abrir tutorial</a>
           <a href="#" class="btn btn-primary pdf-downloader">Descargar en PDF</a><br/>
@@ -231,7 +225,7 @@ pybossa.taskLoaded(function(task, deferred){
         });
 
         $('#data-table').handsontable({
-          colHeaders: ["---", "---", "---", "---", "---"],
+          colHeaders: ["A", "B", "C", "D", "E"],
           data: [["","","","",""]],
           colWidths: [50, 50, 50, 120, 100],
           minSpareRows: 1,
