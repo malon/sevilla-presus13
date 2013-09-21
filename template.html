@@ -175,7 +175,7 @@ function goNext(task) {
   renderPage(task);
 }
 
-function loadUserProgress() {
+function loadUserProgress(task) {
     pybossa.userProgress('sevilla-presus13').done(function(data){
         var pct = Math.round((data.done*100)/data.total);
         $("#progress").css("width", pct.toString() +"%");
@@ -185,7 +185,7 @@ function loadUserProgress() {
         $("#done").text(data.done);
 
         $('.pdf-downloader').click(function(e) {
-            var pdf_task_page = data.done + 1;
+            var pdf_task_page = task.pageNum;
             var download_url = "https://github.com/openkratio/sevilla-presus13/raw/master/pdf/"+pdf_task_page+"_sevilla-presus13.pdf";
             window.open(download_url);
         });
@@ -243,7 +243,7 @@ pybossa.taskLoaded(function(task, deferred){
 
 pybossa.presentTask(function(task, deferred){
     if ( !$.isEmptyObject(task) ) {
-            loadUserProgress();
+            loadUserProgress(task);
             $("#viewport_" + task.id).show();
             renderPage(task);
             $("#question h1").text(task.info.question);
